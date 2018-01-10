@@ -1,2 +1,30 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cutive" rel="stylesheet">
+    <title><%= content_for?(:title) ? yield(:title) : "Ryan Torrance" %></title>
+
+    <%= stylesheet_link_tag    "application", media: "all" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+
+        <% flash.each do |key, value| %>
+          <%= value %>
+        <% end %>
+
+        <%= yield %>
+        <div class="hero-section">
+          <div class="hero-section-text">
+            <h1>Hi, I'm Ryan. I am a Full Stack Devloper living in Philadelphia, PA. </h1>
+            <br /><%= link_to "Click Here to learn more.", resumes_path, class:"welcome-button" %> </h3>
+          </div>
+        </div>
+  </body>
+</html>
