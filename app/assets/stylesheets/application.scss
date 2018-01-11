@@ -172,7 +172,8 @@
  $hero-height: 100vh;
 
 .hero-section {
-   background-image: image-url("gopro.jpg");
+   background: image-url("gopro.jpg") 50% no-repeat;
+   max-width: 100%;
   background-size: cover;
   height: $hero-height;
   text-align: center;
