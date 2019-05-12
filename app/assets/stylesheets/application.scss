@@ -16,6 +16,8 @@
 
  */
 
+ @import "materialize";
+
  //#E4DED0 light grey
  //#ABCCBD light green
  //#7DBEB8 greener
@@ -24,6 +26,16 @@
  //$orange: #FA2A00;
  //$greentwo: #86B8B1;
  //$brown: #3D1C00;
+
+ .icons {
+  display:inline-block;
+  font-size: 40px;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  vertical-align: bottom;
+ }
 
 .background-two {
   background-image: image-url("background4.jpg");

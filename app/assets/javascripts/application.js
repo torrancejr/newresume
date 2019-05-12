@@ -14,6 +14,7 @@
 // = require jquery
 // = require_tree .
 // = require foundation
+//= require materialize-sprockets
 
 $(function () {
   $(document).foundation()
